@@ -5,6 +5,9 @@
 -- node(s)
 -- asset(s)
 
+CREATE SCHEMA cms_annex_proto_1;
+USE cms_annex_proto_1;
+
 CREATE TABLE IF NOT EXISTS user_actual (
   user_id SERIAL PRIMARY KEY
   name_first
