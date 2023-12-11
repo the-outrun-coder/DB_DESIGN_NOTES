@@ -14,26 +14,31 @@ CREATE TABLE IF NOT EXISTS user_actual (
   name_last
   contact_email
   contact_phone
+  password
   -- socials ?
-  -- 
+  -- GENERAL PREFERENCES GO HERE
 );
+
 CREATE TABLE IF NOT EXISTS user_admin (
   id SERIAL PRIMARY KEY
-  -- FK => user_actual
+  user-- FK => user_actual
+  -- ADMIN SPEC PREFS GO HERE
 );
 
 CREATE TABLE IF NOT EXISTS user_author (
   id SERIAL PRIMARY KEY
-  -- FK => user_actual
+  user-- FK => user_actual
+  -- AUTHOR SPEC PREFS GO HERE
 );
 CREATE TABLE IF NOT EXISTS user_editor (
   id SERIAL PRIMARY KEY
   -- FK => user_actual
-  
+  -- EDITOR SPEC PREFS GO HERE
 );
 CREATE TABLE IF NOT EXISTS user_visitor (
   id SERIAL PRIMARY KEY
   -- FK => user_actual
+  -- VISITOR SPEC PREFS GO HERE
 );
 
 -- 
