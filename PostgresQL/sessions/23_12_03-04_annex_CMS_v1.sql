@@ -9,12 +9,12 @@ CREATE SCHEMA cms_annex_proto_1;
 USE cms_annex_proto_1;
 
 CREATE TABLE IF NOT EXISTS user_actual (
-  user_id SERIAL PRIMARY KEY
-  name_first
-  name_last
-  contact_email
-  contact_phone
-  password
+  user_id SERIAL PRIMARY KEY,
+  name_first VARCHAR(100), -- SAMPLE NOTE <
+  name_last VARCHAR(100),
+  contact_email VARCHAR(255),
+  contact_phone INT,
+  password TEXT, -- ! NEEDS TO BE SOME KIND OF BIG SERIAL
   -- socials ?
   -- GENERAL PREFERENCES GO HERE
 );
